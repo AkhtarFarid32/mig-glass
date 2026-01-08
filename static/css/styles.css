@@ -1,0 +1,15 @@
+:root{--accent:#49E670;--dark:#32373c}
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+.site-header{position:sticky;top:0;z-index:1000}
+.hero{background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.25)),url('../asset/images/hero-bg.jpg') center/cover no-repeat;padding:6rem 0}
+.small-heading{letter-spacing:1px;color:#dfe7ea}
+.reveal{opacity:0;transform:translateY(18px);transition:all .6s ease}
+.reveal.animate{opacity:1;transform:none}
+.reveal.delay-1{transition-delay:.18s}
+.reveal.delay-2{transition-delay:.36s}
+.reveal.delay-3{transition-delay:.6s}
+.counter-card{background:#fff;padding:1rem 1.25rem;border-radius:.5rem;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.counter{color:var(--accent);font-weight:700}
+footer{background:#0b0b0b;color:#bfc6c6}
+img{max-width:100%;height:auto}
+@media(min-width:992px){.hero{min-height:68vh}}
