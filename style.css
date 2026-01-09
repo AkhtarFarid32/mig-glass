@@ -1,0 +1,261 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #7b6245;
+    /* Dark brown from footer image */
+    --secondary-color: #a58b6e;
+    /* Lighter brown/tan */
+    --text-white: #ffffff;
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.main-header {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    font-weight: 700;
+    color: #222 !important;
+    padding: 0 15px !important;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.header-social a {
+    color: #444;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.header-social a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://artaluminum.com.pk/wp-content/uploads/2024/11/about-us-img.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #5a4833;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Footer Styles - Exactly like the image */
+.main-footer {
+    background-color: #7b6245;
+    /* Dark brown background */
+    color: white;
+    padding: 80px 0 20px;
+}
+
+.footer-logo img {
+    max-width: 280px;
+    margin-bottom: 25px;
+}
+
+.footer-about p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    line-height: 1.7;
+}
+
+.social-icons-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.social-icon.facebook {
+    background-color: #1877F2;
+}
+
+.social-icon.youtube {
+    background-color: #FF0000;
+}
+
+.social-icon.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icon.tiktok {
+    background-color: #000000;
+}
+
+.footer-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+    padding-left: 8px;
+    color: var(--secondary-color);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-info-item i {
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.contact-info-item p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.newsletter-form {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-form button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    margin-top: 80px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 15px;
+    margin: 0;
+}
